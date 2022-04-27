@@ -6,7 +6,10 @@
   "main": "app.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
-    "dev": "node app.js"
+    "dev": "node app.js",
+     "test": "node ./node_modules/.bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "author": "MauroMontan",
   "license": "ISC",
@@ -15,5 +18,8 @@
     "fs": "^0.0.1-security",
     "jest": "^28.0.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
   }
 }
