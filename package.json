@@ -1,0 +1,15 @@
+{
+  "name": "launchx-refactoring",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "refactoring proyect",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "MauroMontan",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
