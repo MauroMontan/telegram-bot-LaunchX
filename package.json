@@ -5,14 +5,15 @@
   "description": "refactoring proyect",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
-    "dev":"node app.js"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "dev": "node app.js"
   },
   "author": "MauroMontan",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.0",
     "fs": "^0.0.1-security",
-    "jest": "^28.0.1"
+    "jest": "^28.0.1",
+    "path": "^0.12.7"
   }
 }
