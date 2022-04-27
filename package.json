@@ -5,9 +5,8 @@
   "description": "refactoring proyect",
   "main": "app.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test": "node ./node_modules/.bin/jest",
     "dev": "node app.js",
-     "test": "node ./node_modules/.bin/jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
