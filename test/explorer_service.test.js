@@ -28,18 +28,12 @@ describe("Explorer service test suit", () => {
 
 describe("FIZZBUZZ VALIDATION TEST", () => {
 
-  test("1) getting FIZZBUZZ ", () => {
+  test("1) getting input value as output ", () => {
 
-    const ex = [
 
-      { score: 4, trick: "" },
+    const fizzbuzz = FizzBuzzService.fizzBuzzValidation(5);
 
-      { score: 3, trick: "" }
-    ];
-
-    const fizzbuzz = FizzBuzzService.assignFizzBuzz(ex[0])
-
-    expect(fizzbuzz).toBe("FIZZBUZZ");
+    expect(fizzbuzz).toBe("BUZZ");
 
   })
 
