@@ -3,9 +3,6 @@ import express, { json } from "express";
 import ExplorerController from "./lib/controller/explorer_controler.js";
 
 
-
-// TODO : fix tests with the new services methods
-
 const app = express();
 
 app.use(json());
