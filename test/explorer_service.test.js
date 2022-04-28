@@ -20,8 +20,7 @@ describe("Explorer service test suit", () => {
   });
 
   test("2) get explorer lenght", () => {
-    const data = Reader.loadJson("./lib/data/explorers.json");
-    const nodeExplorersLenght = ExplorersService.nodeExplorersCount(data);
+    const nodeExplorersLenght = ExplorersService.explorersCount("node");
     expect(nodeExplorersLenght).toBe(10);
   });
 });
