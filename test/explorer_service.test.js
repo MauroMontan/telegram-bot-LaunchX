@@ -1,6 +1,7 @@
 import Reader from "../utils/file_reader.js";
 import ExplorersService from "../service/explorer_service.js";
-import { describe, test, expect } from "jest";
+import FizzBuzzService from "../service/fizzbuzz_service.js"
+
 describe("Reader test suit", () => {
 
   test("1) getting", () => {
@@ -25,3 +26,22 @@ describe("Explorer service test suit", () => {
   });
 });
 
+
+describe("FIZZBUZZ VALIDATION TEST", () => {
+
+  test("1) getting FIZZBUZZ ", () => {
+
+    const ex = [
+
+      { score: 4, trick: "" },
+
+      { score: 3, trick: "" }
+    ];
+
+    const fizzbuzz = FizzBuzzService.assignFizzBuzz(ex[0])
+
+    expect(fizzbuzz).toBe("FIZZBUZZ");
+
+  })
+
+})
