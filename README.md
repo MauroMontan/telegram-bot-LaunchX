@@ -2,12 +2,14 @@
 # FIZZ BUZZ API 
 
 
+for running this api locally follow the next steps.
 
-### installing with:
+### install project dependencies:
 
 ```
 $ npm install 
 ```
+
 
 ### Running jest test:
 
@@ -16,6 +18,33 @@ $ npm install
 ```
 $ npm run jest
 ```
+
+
+### Running the api on 3000 port:
+
+```
+$ npm run dev
+```
+
+
+### Explorer endpoint
+
+endpoitns has been tested with [Insomnia](https://insomnia.rest/). you can open the insomnia request collection for this project [here](here goes insomnia collection folder path) 
+
+missions availables:
+
+- java
+- node
+
+> GET localhost:3000/explorers
+
+> GET localhost:3000/explorers/{mission}
+
+> GET localhost:3000/explorers/amout/java
+
+> GET localhost:3000/explorers/usernames/{mission}
+
+> GET localhost:3000/explorers/fizzbuzz/{score}
 
 
 ### Explorer model 
@@ -32,15 +61,4 @@ $ npm run jest
 
 ```
 
-
-
-### Explorer endpoint
-
-app is running on port 3000 it can be changed
-
-> GET localhost:3000/explorers/
-
-> GET localhost:3000/explorers/:mission
-
-
-TODO: add missing endpoints
+this is a [Innovaccion Virtual](https://www.instagram.com/innovaccionvirtual/) LaunchX backend exercise :).
