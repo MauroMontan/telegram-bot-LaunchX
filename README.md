@@ -29,7 +29,7 @@ $ npm run dev
 
 ### Explorer endpoint
 
-endpoitns has been tested with [Insomnia](https://insomnia.rest/). you can open the insomnia request collection for this project [here](here goes insomnia collection folder path) 
+endpoitns has been tested with [Insomnia](https://insomnia.rest/). you can open the insomnia request collection for this project [here](https://github.com/MauroMontan/fizzbuzz-api-rest/tree/main/insomnia_collection)
 
 missions availables:
 
