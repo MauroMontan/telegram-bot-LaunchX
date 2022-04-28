@@ -1,11 +1,11 @@
-import Reader from "../utils/file_reader.js";
-import ExplorersService from "../service/explorer_service.js";
-import FizzBuzzService from "../service/fizzbuzz_service.js"
+import Reader from "../lib/utils/file_reader.js";
+import ExplorersService from "../lib/service/explorer_service.js";
+import FizzBuzzService from "../lib/service/fizzbuzz_service.js"
 
 describe("Reader test suit", () => {
 
   test("1) getting", () => {
-    const data = Reader.loadJson("./data/explorers.json");
+    const data = Reader.loadJson("./lib/data/explorers.json");
     expect.objectContaining(data);
 
   });
@@ -15,12 +15,12 @@ describe("Reader test suit", () => {
 describe("Explorer service test suit", () => {
 
   test("1) get data from json file", () => {
-    const data = Reader.loadJson("./data/explorers.json");
+    const data = Reader.loadJson("./lib/data/explorers.json");
     expect.objectContaining(data);
   });
 
   test("2) get explorer lenght", () => {
-    const data = Reader.loadJson("./data/explorers.json");
+    const data = Reader.loadJson("./lib/data/explorers.json");
     const nodeExplorersLenght = ExplorersService.nodeExplorersCount(data);
     expect(nodeExplorersLenght).toBe(10);
   });

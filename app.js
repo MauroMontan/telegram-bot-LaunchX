@@ -1,8 +1,28 @@
 
+import express, { json } from "express";
+import ExplorerController from "./lib/controller/explorer_controler.js";
 
 
-// TODO part 8
-// Part 8: Get a list of the explorers in node, if the score is divisible by 5 and 3, set the property trick and the value FIZZBUZZ, if is just divisible by 5 set the property trcik and the value BUZZ, if is just divisible by 3 set the property trick and the value FIZZ, otherwise set the property trick and the score value. TODO
+
+// TODO : fix tests with the new services methods
+
+const app = express();
+
+app.use(json());
+
+app.use("/explorers", ExplorerController);
+
+const PORT = 3000;
+
+app.get("/", (_, res) => {
+
+  res.send({ "message": "hello" });
+});
+
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT} `);
+});
+
 
 
 
