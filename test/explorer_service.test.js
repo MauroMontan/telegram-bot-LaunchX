@@ -1,5 +1,5 @@
-import Reader from "../lib/utils/file_reader.js";
-import ExplorersService from "../lib/service/explorer_service.js";
+const Reader = require("../lib/utils/file_reader");
+const ExplorersService = require("../lib/service/explorer_service");
 
 describe("Reader test suit", () => {
     test("1) getting", () => {
